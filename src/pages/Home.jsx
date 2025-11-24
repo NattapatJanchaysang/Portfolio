@@ -1,4 +1,5 @@
-import { ThemeToggle } from "../components/ThemeToggle";
+import { ThemeToggle } from "@/components/ThemeToggle";    
+import { StarBackground } from "@/components/StarBackground";
 
 const Home = () => {
     return (
@@ -7,7 +8,7 @@ const Home = () => {
             {/* Theme Toggle (darkmode,lightmode) */}
             <ThemeToggle />
             {/* Background effect (for Aesthetic 555) */}
-
+            <StarBackground />
             {/* Navbar */}
 
             {/* Main content */}
