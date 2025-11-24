@@ -1,7 +1,11 @@
-export const Home = () => {
-    return (
-        <div>
+import { ThemeToggle } from "../components/ThemeToggle";
 
+const Home = () => {
+    return (
+        <div className = "min-h-screen bg-background text-foreground overflow-x-hidden">
+            
+            {/* Theme Toggle (darkmode,lightmode) */}
+            <ThemeToggle />
             {/* Background effect (for Aesthetic 555) */}
 
             {/* Navbar */}
@@ -10,8 +14,10 @@ export const Home = () => {
 
             {/* footer */}
             
-            {/* Theme Toggle (darkmode,lightmode) */}
             
+
         </div>
     )
 }
+
+export default Home
