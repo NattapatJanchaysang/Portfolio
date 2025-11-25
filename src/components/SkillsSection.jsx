@@ -20,7 +20,7 @@ const Skills = [
 
 const categories = ["All", "frontend", "backend", "tools"];
 
-export const Skillssection = () => {
+export const SkillsSection = () => {
 
     const [activeCategories, setActiveCategories] = useState("All");
 
