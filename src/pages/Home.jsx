@@ -6,6 +6,8 @@ import { AboutSection } from "@/components/Aboutsection";
 import { Skillssection } from "@/components/Skillssection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { ContactSection } from "@/components/ContactSection";
+import { Footer } from "@/components/Footer";
+
 
 const Home = () => {
     return (
@@ -28,7 +30,7 @@ const Home = () => {
 
 
             {/* footer */}
-                    
+            <Footer />
             
         </div>
     )
