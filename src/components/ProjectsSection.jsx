@@ -5,7 +5,7 @@ const Projects = [
         id: 1,
         title: "Iotwebsite",
         description: "A website for monitoring and controlling IoT devices in real-time, featuring data visualization and user authentication.",
-        image: "public/Projects/iotwebsite.png",
+        image: "public/Projects/Iotwebsite.png",
         tags: ["HTML", "CSS", "JavaScript", "Express.js", "Node.js"],
         demoUrl: "https://iot-webdev-sigma.vercel.app/index.html",
         githubUrl: "https://github.com/NattapatJanchaysang/Project-Webdevelopment"
@@ -15,7 +15,7 @@ const Projects = [
         id: 2,
         title: "Iotwebsite",
         description: "A website for monitoring and controlling IoT devices in real-time, featuring data visualization and user authentication.",
-        image: "public/Projects/iotwebsite.png",
+        image: "public/Projects/Iotwebsite.png",
         tags: ["HTML", "CSS", "JavaScript", "Express.js", "Node.js"],
         demoUrl: "https://iot-webdev-sigma.vercel.app/index.html",
         githubUrl: "https://github.com/NattapatJanchaysang/Project-Webdevelopment"
