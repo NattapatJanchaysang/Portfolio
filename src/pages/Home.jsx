@@ -21,9 +21,9 @@ const Home = () => {
             <NavBar />
             {/* Main content */}
             <main>
-            <Herosection />
+            <HeroSection />
             <AboutSection />
-            <Skillssection />
+            <SkillsSection />
             <ProjectsSection />
             <ContactSection />
             </main>
