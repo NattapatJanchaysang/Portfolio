@@ -1,4 +1,4 @@
-import { ExternalLinkIcon, ComputerIcon, ArrowRightIcon } from "lucide-react"
+import { ExternalLinkIcon, ComputerIcon, ArrowRightIcon, GithubIcon } from "lucide-react"
 
 const Projects = [
     {
@@ -62,7 +62,7 @@ export const ProjectsSection = () => {
                                         </a>
 
                                         <a href={project.githubUrl} className="text-foreground/80 hover:text-primary transition-colors duration-300" target="_blank" alt="GitHub Link">
-                                            <ComputerIcon size={20}/>
+                                            <GithubIcon size={20}/>
                                         </a>
                                     </div>
                                 </div>
