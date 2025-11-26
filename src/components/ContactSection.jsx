@@ -1,9 +1,43 @@
 import { FacebookIcon, InstagramIcon, LinkedinIcon, MailIcon, MapPinIcon, PhoneIcon, SendIcon } from "lucide-react"
 import { cn } from "@/lib/utils";
+import emailjs from '@emailjs/browser';
+import { useState } from "react";
 
 
 
 export const ContactSection = () => {
+
+
+    const [formdata,setformdata] =useState({
+        name: "",
+        email: "",
+        message: "",
+    })
+
+    const SERVICE_ID = "service_9t4dyx9"
+    const TEMPLATE_ID = "template_s21g93h"
+    const PUBLIC_KEY = "5IRkparEJT-Lv3Gr1"
+
+    const [isSubmitting, setisSubmitting] = useState(false);
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        setisSubmitting(true);
+
+        setTimeout(() => {
+            setisSubmitting(false);
+            emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then(() => {
+                alert("Message Sent!")
+                setformdata({ name:"", email:"", message:""})
+            }).catch(() => {alert("Oops! Something went wrong. Please try again.")})
+        }, 1500 )
+
+        
+    }
+
+
+
     return (
         <section id="contact" className="py-24 px-4 relative bg-secondary/30">
             <div className="container mx-auto max-w-5xl">
@@ -78,7 +112,7 @@ export const ContactSection = () => {
             <div className="bg-card p-8 rounded-lg shadow-xs">
                 <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name" className="block text-sm font-medium mb-2">Your Name</label>
                         <input 
@@ -86,8 +120,10 @@ export const ContactSection = () => {
                         id="name" 
                         name="name"
                         required
+                        value={formdata.name}
                         className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring_primary"
                         placeholder="Write YourName..."
+                        onChange={(e) => setformdata({...formdata, name: e.target.value})}
                         />
                     </div>
 
@@ -98,8 +134,10 @@ export const ContactSection = () => {
                         id="email" 
                         name="email"
                         required
+                        value={formdata.email}
                         className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring_primary"
                         placeholder="Write Email..."
+                        onChange={(e) => setformdata({...formdata, email: e.target.value})}
                         />
                     </div>
 
@@ -109,15 +147,16 @@ export const ContactSection = () => {
                         id="message" 
                         name="message"
                         required
+                        value={formdata.message}
                         className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring_primary resize:none"
                         placeholder="Write Your Message..."
+                        onChange={(e) => setformdata({...formdata, message: e.target.value})}
                         />
                     </div>
 
-                    <button type="submit" className={cn("cosmic-button w-full flex items-center justify-center gap-2",
+                    <button type="submit" disabled={isSubmitting} className={cn("cosmic-button w-full flex items-center justify-center gap-2")} >
 
-                    )}>
-                        Send Message<SendIcon size={16}/>
+                        {isSubmitting ? "Sending..." : "Send Message"}<SendIcon size={16}/>
                     </button>
                 </form>
 
