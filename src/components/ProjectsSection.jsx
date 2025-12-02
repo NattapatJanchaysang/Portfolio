@@ -5,7 +5,7 @@ const Projects = [
         id: 1,
         title: "Iotwebsite",
         description: "A website for monitoring and controlling IoT devices in real-time, featuring data visualization and user authentication.",
-        image: "/Projects/iotwebsite.png",
+        image: "/Projects/Iotwebsite.png",
         tags: ["HTML", "CSS", "JavaScript", "Express.js", "Node.js"],
         demoUrl: "https://iot-webdev-sigma.vercel.app/index.html",
         githubUrl: "https://github.com/NattapatJanchaysang/Project-Webdevelopment"
