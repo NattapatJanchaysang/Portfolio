@@ -7,7 +7,7 @@ export const HeroSection = () => {
         <div className="max-w-6xl mx-auto z-10 grid grid-cols-1 md:grid-cols-2 gap-x-4"> 
 
             <div className="opacity-0 animate-fade-in">
-                <img src="/Projects/myself.png" alt="ArtProfile" />
+                <img className="w-full h-auto" src="/Projects/myself.png" alt="ArtProfile" />
             </div>
 
             <div className="space-y-6 md:pt-24">
@@ -31,7 +31,7 @@ export const HeroSection = () => {
             </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+        <div className="absolute bottom-8 right-0 pr-4 md:left-1/2 md:transform md:-translate-x-1/2 flex flex-col items-center animate-bounce">
             <span className="text-sm text-muted-foreground mb-2">Scroll</span>
             <ArrowBigDownIcon className="h-5 w-5 text-primary"/>
         </div>
