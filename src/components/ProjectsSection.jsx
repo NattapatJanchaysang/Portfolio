@@ -20,6 +20,15 @@ const Projects = [
         demoUrl: "https://github.com/NattapatJanchaysang/Project-Movielist",
         githubUrl: "https://github.com/NattapatJanchaysang/Project-Movielist"
     },
+    {
+        id: 3,
+        title: "BlogWebsite",
+        description: "full-stack blog application built with modern web technologies",
+        image: "/Projects/blogwebsite.png",
+        tags: ["React", "TailwindCSS", "Node.js", "Node.js", "Express.js", "MySQL"],
+        demoUrl: "https://github.com/NattapatJanchaysang/Blog-Website",
+        githubUrl: "https://github.com/NattapatJanchaysang/Blog-Website"
+    },
 
 ]
 
