@@ -3,6 +3,24 @@ import { ExternalLinkIcon, ComputerIcon, ArrowRightIcon, GithubIcon } from "luci
 const Projects = [
     {
         id: 1,
+        title: "MedicalGuroo",
+        description: "AI-powered medical voice agent consultation platform.",
+        image: "/Projects/medicalguroo.jpg",
+        tags: ["Next.js", "Tailwind CSS", "Neon Postgres", "Vapi Ai", "AssemblyAI"],
+        demoUrl: "https://medicalguroo.vercel.app/",
+        githubUrl: "https://github.com/NattapatJanchaysang/MedicalGuroo"
+    },
+    {
+        id: 2,
+        title: "EasyTalk",
+        description: "An interactive AI English tutoring platform using Next.js 16",
+        image: "/Projects/easytalk.jpg",
+        tags: ["Next.js", "Tailwind CSS", "Neon Postgres", "Vapi Ai", "AssemblyAI"],
+        demoUrl: "https://easytalk-nine.vercel.app/",
+        githubUrl: "https://github.com/NattapatJanchaysang/EasyTalk"
+    },
+    {
+        id: 3,
         title: "Iotwebsite",
         description: "A website for monitoring and controlling IoT devices in real-time, featuring data visualization and user authentication.",
         image: "/Projects/Iotwebsite.png",
@@ -12,8 +30,8 @@ const Projects = [
     },
     
     {
-        id: 2,
-        title: "MovieList",
+        id: 4,
+        title: "List Your Movies",
         description: "A MovieList Website that you can add your own favorite movies.",
         image: "/Projects/movielist.png",
         tags: ["React", "CSS", "JavaScript"],
@@ -21,12 +39,12 @@ const Projects = [
         githubUrl: "https://github.com/NattapatJanchaysang/Project-Movielist"
     },
     {
-        id: 3,
+        id: 5,
         title: "BlogWebsite",
         description: "full-stack blog application built with modern web technologies",
         image: "/Projects/blogwebsite.png",
-        tags: ["React", "TailwindCSS", "Node.js", "Node.js", "Express.js", "MySQL"],
-        demoUrl: "https://github.com/NattapatJanchaysang/Blog-Website",
+        tags: ["React", "TailwindCSS", "Node.js", "Express.js", "Tidb"],
+        demoUrl: "https://njblog-seven.vercel.app/",
         githubUrl: "https://github.com/NattapatJanchaysang/Blog-Website"
     },
 

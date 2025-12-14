@@ -7,10 +7,10 @@ export const HeroSection = () => {
         <div className="max-w-6xl mx-auto z-10 grid grid-cols-1 md:grid-cols-2 gap-x-4"> 
 
             <div className="opacity-0 animate-fade-in">
-                <img className="w-full h-auto" src="/Projects/myself.png" alt="ArtProfile" />
+                <img className="w-full h-auto" src="/Projects/myprofile.png" alt="ArtProfile" />
             </div>
 
-            <div className="space-y-6 md:pt-24">
+            <div className="space-y-6 md:pt-24 w-full">
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                 <span className="opacity-0 animate-fade-in">HI, I'm </span>
                 <span className="opacity-0 animate-fade-in-delay-1 text-primary">Nattapat </span>
@@ -18,9 +18,7 @@ export const HeroSection = () => {
                 </h1>
 
                 <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    I am a Full-stack Developer specializing in creating dynamic and responsive web applications. 
-                    With a passion for coding and problem-solving, 
-                    I still learn about many things like animation gsap, backend development, database management.
+                    I am a Iot engineering student at KMITL. I'm looking for an internship opportunity to develop my skills and gain practical experience in the field of software engineering.
                 </p>
 
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">
